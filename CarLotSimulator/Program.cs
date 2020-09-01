@@ -8,15 +8,65 @@ namespace CarLotSimulator
         {
             //TODO
 
-            //Create a seperate class file called Car
-            //Car shall have the following properties: Year, Make, Model, EngineNoise, HonkNoise, IsDriveable
-            //Car shall have the following methods: MakeEngineNoise(), MakeHonkNoise()
-            //The methods should take one string parameter: the respective noise property            
 
 
             //Now that the Car class is created we can instanciate 3 new cars
             //Set the properties for each of the cars
             //Call each of the methods for each car
+
+            var johnsCar = new Car();
+            johnsCar.Year = (2006);
+            johnsCar.Make=("LandRover");
+            johnsCar.Model = ("LR3");
+            johnsCar.EngineNoise = ("Loud");
+            johnsCar.HonkNoise = ("HONK!");
+            johnsCar.MakeEngineNoise("RHMRHMRHMRHMRHM");
+            johnsCar.MakeHonkNoise("HOOOONNKKK!");
+            Console.WriteLine(johnsCar.Year);
+            Console.WriteLine(johnsCar.Make);
+            Console.WriteLine(johnsCar.Model);
+            Console.WriteLine(johnsCar.EngineNoise);
+            Console.WriteLine(johnsCar.HonkNoise);
+            
+
+
+            Console.WriteLine("------------------------");
+
+            var ellasCar = new Car();
+            ellasCar.Year = (2013);
+            ellasCar.Make = ("Mazda");
+            ellasCar.Model = ("Cx 5");
+            ellasCar.EngineNoise = ("Quiet");
+            ellasCar.HonkNoise = ("Beep");
+            ellasCar.MakeEngineNoise("rhmrhmrhm");
+            ellasCar.MakeHonkNoise("beeeeeeep");
+            Console.WriteLine(ellasCar.Year);
+            Console.WriteLine(ellasCar.Make);
+            Console.WriteLine(ellasCar.Model);
+            Console.WriteLine(ellasCar.EngineNoise);
+            Console.WriteLine(ellasCar.HonkNoise);
+
+
+
+
+
+
+            Console.WriteLine("------------------------");
+
+            var nicksCar = new Car();
+            nicksCar.Year = (2001);
+            nicksCar.Make = ("Toyota");
+            nicksCar.Model = ("Tundra");
+            nicksCar.EngineNoise = ("Medium Noise");
+            nicksCar.HonkNoise = ("honk");
+            nicksCar.MakeEngineNoise("rHMrHMrHMrHM");
+            nicksCar.MakeHonkNoise("honkkkkkkkk");
+            Console.WriteLine(nicksCar.Year);
+            Console.WriteLine(nicksCar.Make);
+            Console.WriteLine(nicksCar.Model);
+            Console.WriteLine(nicksCar.EngineNoise);
+            Console.WriteLine(nicksCar.HonkNoise);
+
 
             //*************BONUS*************//
 
